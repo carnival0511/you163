@@ -1,0 +1,303 @@
+@import "public";
+@import "top";
+.main {
+    // 第一部分  新品首发
+    .section1 {
+        @extend %public;
+        height: 510px;
+        margin-top: 30px;
+        // background-color: #f00;
+    }
+    // 第一部分上
+    .sectionTop {
+        padding-bottom: 20px;
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+            float: left;
+            margin-right: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                color: #b4a078;
+            }
+        }
+        small {
+            padding-top: 13px;
+            display: inline-block;
+            box-sizing: border-box;
+            color: #333;
+            font-size: $font14;
+        }
+        a {
+            display: inline-block;
+            line-height: 1;
+            margin-left: 30px;
+            padding-top: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: $font14;
+            box-sizing: border-box;
+            color: #333;
+            float: right;
+            &:hover {
+                color: #b4a078;
+            }
+        }
+    }
+    // 第一部分下
+    .sectionBot {
+        .product1 {
+            float: left;
+            width: 265px!important;
+            margin-right: 10px;
+            font-size: 13px;
+            margin-bottom: 40px;
+            &:hover {
+                box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+                background-color: #f4f0ea;
+            }
+        }
+        // 商品图片
+        .productpic {
+            position: relative;
+            width: 265px;
+            height: 265px;
+            margin-bottom: 5px;
+        }
+        .protitle {
+            width: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 200px;
+            height: 36px;
+            margin-top: -6px;
+            z-index: 10;
+            padding-left: 8px;
+            padding-right: 14px;
+            box-sizing: border-box;
+            // float: left;
+            border-top-left-radius: 3px;
+            background-image: url(https://yanxuan.nosdn.127.net/d71e2460d062eaa21d5bdf97eba9da89.png?quality=95&type=webp&imageView);
+            .nowprice {
+                font-weight: 600;
+            }
+        }
+        .protitle span {
+            color: #fff;
+            height: 18px;
+            line-height: 18px;
+            // background-color: #f00;
+            display: block;
+            text-align: center;
+            // white-space: nowrap;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        .procontent {
+            width: 70%;
+            text-indent: 2px;
+            box-sizing: border-box;
+            // overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            position: absolute;
+            left: 80px;
+            bottom: 0;
+            background-color: #f00;
+        }
+        .img-lazyload {
+            background-color: #fff;
+        }
+        // 最后一个product没有右边的margin
+        .lastpro {
+            margin-right: 0;
+        }
+        // 商品详情
+        .bd {
+            width: 265px;
+            height: 91.6px;
+            text-align: center;
+        }
+        .prdtag span {
+            margin-left: 6px;
+            height: 20px;
+            line-height: 20px;
+            color: #fff!important;
+            padding: 0 5px;
+            background-color: #e36844;
+            display: inline-block;
+            font-size: 12px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h4 {
+            line-height: 20px;
+            a {
+                cursor: pointer;
+                color: #333;
+                text-decoration: none;
+                &:hover {
+                    color: #b4a078;
+                }
+            }
+        }
+        h4 span {
+            box-sizing: border-box;
+            width: 160px;
+            display: block;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+        .price span {
+            line-height: 13px;
+            height: 13px;
+            padding: 0;
+            box-sizing: border-box;
+            color: #d4282d;
+            text-align: center;
+        }
+        .price .counterprice {
+            color: #999;
+            box-sizing: border-box;
+            text-decoration: line-through;
+        }
+    }
+    // 第二部分  人气推荐
+    .section2 {
+        width: $Width;
+        height: 618px;
+        padding: 60px 0;
+        background: #f4f0ea;
+        .wrap {
+            @extend %public;
+        }
+        .sectionTop {
+            padding-bottom: 20px;
+            small {
+                line-height: 28px;
+                margin-right: 14px;
+                text-align: center;
+            }
+            .bianji {
+                color: #b4a078;
+                border-bottom: 2px solid #b4a078;
+            }
+            small:hover {
+                color: #b4a078;
+                border-bottom: 2px solid #b4a078;
+            }
+        }
+    }
+    // 第五部分  居家生活
+    .section5 {
+        width: $Width;
+        height: 790px;
+        // padding-bottom: 60px;
+        .wrap {
+            @extend %public;
+            .sectionTop {
+                padding-bottom: 20px;
+                height: 20px;
+                &>ul>li a {
+                    margin-left: 10px;
+                }
+            }
+            h3 {
+                margin-right: 200px;
+            }
+            li {
+                float: left;
+            }
+        }
+        .sectionMid {
+            height: 310px;
+            margin-bottom: 15px;
+        }
+    }
+    // 大家都在说(轮播效果)
+    .oursay {
+        box-sizing: border-box;
+        width: $Width;
+        background-color: #f4f0ea;
+        padding: 60px;
+        overflow: hidden;
+        height: 660px;
+        position: relative;
+        button {
+            display: block;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: #E2C199;
+            z-index: 9;
+            position: absolute;
+            top: 250px!important;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+        }
+        .leftbtn {
+            left: 150px;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2562px;
+        }
+        .rightbtn {
+            right: 150px;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4683px;
+        }
+        .wrap {
+            @extend %public;
+            margin: 0 auto;
+            // background-color: #fff;
+            height: 660px;
+        }
+        .sectionTop {
+            padding-bottom: 20px;
+        }
+        .product2 {
+            position: relative;
+            float: left;
+            width: 355px;
+            margin-right: 8px;
+        }
+        .lastpro2 {
+            padding-right: 0px;
+        }
+        .comment {
+            padding: 20px 15px;
+            // box-sizing: border-box;
+            width: 315px;
+            height: 146px;
+            background-color: #fff;
+            color: #333;
+            position: absolute;
+            bottom: -135px;
+            left: 50%;
+            margin-left: -172px;
+            span {
+                color: #999;
+                font-size: 13px;
+            }
+            .para {
+                font-weight: 700;
+                font-size: 14px;
+                color: #000;
+                line-height: 34px;
+            }
+            .commentmid {
+                margin-bottom: 16px;
+            }
+            .comprice {
+                float: right;
+                color: #b4a078;
+                line-height: 34px;
+            }
+            .commentbot p {
+                font-size: $font12;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "public";
+.banner {
+    width: $Width;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #ccc;
+    margin-top: 154px;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
