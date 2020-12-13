@@ -6,7 +6,7 @@
     $login.on('click', function() {
         $.ajax({
             type: 'post',
-            url: 'http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/loginregistry/php/login.php',
+            url: 'http://localhost/dashboard/you163/php/login.php',
             data: {
                 user: $username.val(),
                 pass: $password.val()

@@ -5,17 +5,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/login.css">
 </head>
 
 <body>
-    <fieldset style="width:500px;margin:0 auto;">
-        <legend>用户登录</legend>
-        <form action="" method="post">
-            <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
-            <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
-            <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
-        </form>
-    </fieldset>
+    <!-- 最上面的部分，包括两个小部分 -->
+    <div class="top">
+        <!-- 最上面的黑色nav -->
+        <div class="nav">
+            <i class="laba"></i>
+            <a href="#" class="notice">关于防止近期不法分子冒充客服实施诈骗的公告</a>
+            <ul class="rightul">
+                <!-- 登录/注册 -->
+                <li><a href="registry.html">注册</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">会员</a></li>
+                <li><a href="#">甄选家</a></li>
+                <li class="company">
+                    <a href="#">企业采购<i></i></a>
+                    <ul class="company-inner">
+                        <li><a href="#">企业购</a></li>
+                        <li><a href="#">礼品卡</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="company">
+                    <a href="#">客户服务<i></i></a>
+                    <ul class="company-inner">
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">商务合作</a></li>
+                        <li><a href="#">开放平台</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="phone"><i></i> APP</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 头部第二部分 -->
+        <div class="tab">
+            <!-- 第二部分头部 -->
+            <div class="tabTop">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <!-- 中间部分 -->
+                <div class="tabMiddle">
+                    <div class="search">
+                        <input type="text" placeholder="9.9元超值专区">
+                        <span class="select"><span>搜索</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">保暖穿搭榜</a></li>
+                        <li><a href="#">口罩</a></li>
+                    </ul>
+                </div>
+                <!-- 右边购物车 -->
+                <div class="tabRight">
+                    <i class="firi"></i>
+                    <span>购物车</span>
+                    <i class="seci">0</i>
+                </div>
+            </div>
+            <!-- 第二部分尾部 -->
+            <div class="tabBot">
+                <ul>
+                    <li class="shouye"><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">居家生活</a>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="list.html">口碑好物</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">服饰鞋包</a></li>
+                    <li><a href="#">美食酒水</a></li>
+                    <li><a href="#">个护清洁</a></li>
+                    <li><a href="#">母婴亲子</a></li>
+                    <li><a href="#">运动旅行</a></li>
+                    <li><a href="#">数码家电</a></li>
+                    <li><a href="#">严选全球</a></li>
+                    <li><a href="#">为你严选</a></li>
+                    <li class="zhongchou"><a href="#">众筹</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <fieldset style="width:500px;margin:0 auto;">
+            <legend>用户登录</legend>
+            <form action="" method="post">
+                <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
+                <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
+                <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
+            </form>
+        </fieldset>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="wrap">
+            <!-- 底部的头部 -->
+            <div class="footertop">
+                <div class="fleft">
+                    <h4>客户服务</h4>
+                    <a href="#">
+                        <i></i>
+                        <p>在线客服</p>
+                    </a>
+                    <a href="#" class="seca">
+                        <i class="sec"></i>
+                        <p>用户反馈</p>
+                    </a>
+                </div>
+                <div class="fcenter">
+                    <h4>何为严选</h4>
+                    <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                    <div class="guanzhu">
+                        <span>关注我们：</span>
+                        <i class="yanxuan"></i>
+                        <i class="weixin"></i>
+                        <i class="weibo"></i>
+                    </div>
+                </div>
+                <div class="fright">
+                    <h4>扫码下载严选APP</h4>
+                    <span>二维码</span>
+                    <p>下载领大额新人红包</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部的尾部 -->
+        <div class="footerbot">
+            <div class="wrap">
+                <div class="bottop">
+                    <div class="box">
+                        <i class="fir"></i>
+                        <span>网易自营电商</span>
+                    </div>
+                    <div class="box">
+                        <i class="sec2"></i>
+                        <span>30天无忧退换货</span>
+                    </div>
+                    <div class="box">
+                        <i class="thr"></i>
+                        <span>满99元免邮费</span>
+                    </div>
+                    <div class="box">
+                        <i class="four"></i>
+                        <span>品质保证</span>
+                    </div>
+
+                </div>
+                <div class="botbot">
+                    <!-- 第一行 -->
+                    <div class="firline">
+                        <a href="#">关于我们&nbsp;&nbsp;|</a>
+                        <a href="#">帮助中心&nbsp;&nbsp;|</a>
+                        <a href="#">售后服务&nbsp;&nbsp;|</a>
+                        <a href="#">配送与验收&nbsp;&nbsp;|</a>
+                        <a href="#">商务合作&nbsp;&nbsp;|</a>
+                        <a href="#">企业采购&nbsp;&nbsp;|</a>
+                        <a href="#">开放平台&nbsp;&nbsp;|</a>
+                        <a href="#">搜索推荐&nbsp;&nbsp;|</a>
+                        <a href="#">友情链接&nbsp;&nbsp;|</a>
+                        <a href="#">廉正举报</a>
+                    </div>
+                    <!-- 第二行 -->
+                    <div class="secline">
+                        <a href="#">食品经营许可证：JY13301080111719&nbsp;&nbsp;</a>
+                        <a href="#">出版物经营许可证：新出发滨字第0132号&nbsp;&nbsp;</a>
+                        <span>妙得ICP证号：ICP 证浙B2-20160106</span>
+                        <a href="#">浙杭食药监械经营备20171029号&nbsp;&nbsp;</a>
+                        <a href="#">营业执照&nbsp;&nbsp;</a>
+                        <span>网易公司版权所有 © 1997-</span>
+                        <span>2020</span>
+                    </div>
+                    <!-- 第三行 -->
+                    <div class="thrline">
+                        <a href="#">无线电发射设备销售备案：42202011096855&nbsp;&nbsp;</a>
+                        <a href="#">（浙杭）网械企备字[2019]第00119号&nbsp;&nbsp;</a>
+                        <span>（粤）网械平台备字（2019）第00004号</span>
+                        <span>（粤）-非经营性-2016-0023</span>
+                    </div>
+                    <!-- 第四行 -->
+                    <div class="fourline">
+                        <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010009</span>
+                        <a href="#">单用途商业预付卡备案证：330100AAC0024&nbsp;&nbsp;</a>
+                        <img src="http://yanxuan.nosdn.127.net/86f32b668af6e537389a77480fb5c74d.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

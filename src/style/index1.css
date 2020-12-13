@@ -261,7 +261,7 @@ table {
   border-spacing: 0;
 }
 
-.top .nav, .tab, .main .section1, .main .section2 .wrap, .main .section5 .wrap, .main .oursay .wrap {
+.top .nav, .tab, .main .section1, .main .section2 .wrap, .main .section5 .wrap, .main .oursay .wrap, .footer .wrap, .footer .footerbot .wrap {
   width: 1090px;
   margin: 0 auto;
 }
@@ -276,6 +276,13 @@ table {
 .top .nav {
   height: 36px;
 }
+.top .nav .laba {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin-top: 10px;
+  background: url(http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) no-repeat;
+}
 .top .notice {
   font-size: 12px;
   float: left;
@@ -288,6 +295,13 @@ table {
 }
 .top .phone {
   border-right: none;
+}
+.top .phone i {
+  display: inline-block;
+  margin-right: 4px;
+  height: 11px;
+  width: 7px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp);
 }
 
 .rightul {
@@ -311,6 +325,14 @@ table {
   color: #fff;
 }
 
+.company i {
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-left: 10px;
+  height: 5px;
+  width: 11px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -690px;
+}
 .company ul {
   display: none;
   position: absolute;
@@ -425,13 +447,34 @@ table {
   font-size: 12px;
   margin-top: 25px;
 }
+.tab .tabRight i {
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin-left: 22px;
+}
+.tab .tabRight .firi {
+  margin-right: 10px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -148px;
+}
+.tab .tabRight .seci {
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 4px;
+  line-height: 18px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -51px;
+}
 .tab .tabRight span {
-  line-height: 38px;
-  height: 38px;
+  line-height: 18px;
+  font-size: 14px;
+  float: left;
   color: #CC9756;
 }
 .tab .tabRight:hover {
   background-color: #F5F3EF;
+}
+.tab .tabBot {
+  position: relative;
 }
 .tab .tabBot ul {
   width: 100%;
@@ -440,6 +483,10 @@ table {
   float: left;
   padding: 0 26px;
   box-sizing: border-box;
+  position: relative;
+}
+.tab .tabBot li:hover .menu {
+  display: block;
 }
 .tab .tabBot a {
   padding-bottom: 7px;
@@ -454,6 +501,20 @@ table {
 .tab .tabBot a:hover {
   color: #CC9756;
   border-bottom: 3px solid #CC9756;
+}
+.tab .tabBot .menu {
+  width: 1202px;
+  position: absolute;
+  height: 450px;
+  background-color: #f00;
+  top: 38px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 9999;
+  display: none;
+}
+.tab .tabBot .menu li {
+  float: none;
 }
 .tab .tabBot .shouye {
   padding-left: 0;
@@ -875,7 +936,7 @@ table {
   border-spacing: 0;
 }
 
-.top .nav, .tab, .main .section1, .main .section2 .wrap, .main .section5 .wrap, .main .oursay .wrap {
+.top .nav, .tab, .main .section1, .main .section2 .wrap, .main .section5 .wrap, .main .oursay .wrap, .footer .wrap, .footer .footerbot .wrap {
   width: 1090px;
   margin: 0 auto;
 }
@@ -890,6 +951,13 @@ table {
 .top .nav {
   height: 36px;
 }
+.top .nav .laba {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin-top: 10px;
+  background: url(http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) no-repeat;
+}
 .top .notice {
   font-size: 12px;
   float: left;
@@ -902,6 +970,13 @@ table {
 }
 .top .phone {
   border-right: none;
+}
+.top .phone i {
+  display: inline-block;
+  margin-right: 4px;
+  height: 11px;
+  width: 7px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp);
 }
 
 .rightul {
@@ -925,6 +1000,14 @@ table {
   color: #fff;
 }
 
+.company i {
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-left: 10px;
+  height: 5px;
+  width: 11px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -690px;
+}
 .company ul {
   display: none;
   position: absolute;
@@ -1039,13 +1122,34 @@ table {
   font-size: 12px;
   margin-top: 25px;
 }
+.tab .tabRight i {
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin-left: 22px;
+}
+.tab .tabRight .firi {
+  margin-right: 10px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -148px;
+}
+.tab .tabRight .seci {
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 4px;
+  line-height: 18px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -51px;
+}
 .tab .tabRight span {
-  line-height: 38px;
-  height: 38px;
+  line-height: 18px;
+  font-size: 14px;
+  float: left;
   color: #CC9756;
 }
 .tab .tabRight:hover {
   background-color: #F5F3EF;
+}
+.tab .tabBot {
+  position: relative;
 }
 .tab .tabBot ul {
   width: 100%;
@@ -1054,6 +1158,10 @@ table {
   float: left;
   padding: 0 26px;
   box-sizing: border-box;
+  position: relative;
+}
+.tab .tabBot li:hover .menu {
+  display: block;
 }
 .tab .tabBot a {
   padding-bottom: 7px;
@@ -1069,6 +1177,20 @@ table {
   color: #CC9756;
   border-bottom: 3px solid #CC9756;
 }
+.tab .tabBot .menu {
+  width: 1202px;
+  position: absolute;
+  height: 450px;
+  background-color: #f00;
+  top: 38px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 9999;
+  display: none;
+}
+.tab .tabBot .menu li {
+  float: none;
+}
 .tab .tabBot .shouye {
   padding-left: 0;
 }
@@ -1083,6 +1205,52 @@ table {
 .main .section1 {
   height: 510px;
   margin-top: 30px;
+  position: relative;
+}
+.main .section1 .leftnav {
+  position: absolute;
+  top: 0;
+  left: -125px;
+}
+.main .section1 .leftnav ul {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.main .section1 .leftnav li {
+  width: 108px;
+  line-height: 38px;
+  height: 38px;
+}
+.main .section1 .leftnav li i {
+  width: 30px;
+  height: 30px;
+  float: left;
+  line-height: 38px;
+  margin-left: 10px;
+  margin-right: 8px;
+  background: url(http://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png?quality=95&type=webp&imageView) 50% 50%;
+}
+.main .section1 .leftnav li span {
+  line-height: 19px;
+  float: left;
+  font-size: 8px;
+  box-sizing: border-box;
+}
+.main .section1 .leftnav li span:hover {
+  color: #f00;
+}
+.main .section1 .leftnav li .strong {
+  font-weight: 700;
+  color: #d4282d;
+}
+.main .section1 .leftnav .rexiao {
+  font-size: 16px;
+  color: #BB3343;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  font-weight: 700;
+  cursor: default;
 }
 .main .sectionTop {
   padding-bottom: 20px;
@@ -1124,9 +1292,10 @@ table {
 .main .sectionBot .product1 {
   float: left;
   width: 265px !important;
-  margin-right: 10px;
+  margin-right: 6px;
   font-size: 13px;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 .main .sectionBot .product1:hover {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
@@ -1137,6 +1306,15 @@ table {
   width: 265px;
   height: 265px;
   margin-bottom: 5px;
+}
+.main .sectionBot .productpic .img2 {
+  display: none;
+}
+.main .sectionBot .product1:hover .img1 {
+  display: none;
+}
+.main .sectionBot .product1:hover .img2 {
+  display: block;
 }
 .main .sectionBot .protitle {
   width: 80px;
@@ -1281,9 +1459,13 @@ table {
   padding: 60px;
   overflow: hidden;
   height: 660px;
-  position: relative;
 }
-.main .oursay button {
+.main .oursay .wrap {
+  margin: 0 auto;
+  position: relative;
+  height: 660px;
+}
+.main .oursay .wrap button {
   display: block;
   width: 50px;
   height: 50px;
@@ -1296,17 +1478,19 @@ table {
   border: none;
   outline: none;
 }
-.main .oursay .leftbtn {
-  left: 150px;
+.main .oursay .wrap .leftbtn {
+  left: -58px;
   background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2562px;
 }
-.main .oursay .rightbtn {
-  right: 150px;
-  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4683px;
+.main .oursay .wrap .leftbtn:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2622px;
 }
-.main .oursay .wrap {
-  margin: 0 auto;
-  height: 660px;
+.main .oursay .wrap .rightbtn {
+  right: -50px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4682px;
+}
+.main .oursay .wrap .rightbtn:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4742px;
 }
 .main .oursay .sectionTop {
   padding-bottom: 20px;
@@ -1351,6 +1535,365 @@ table {
 }
 .main .oursay .comment .commentbot p {
   font-size: 12px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #999;
+}
+.footer .footertop {
+  height: 204px;
+  padding: 60px 0 34px 0;
+}
+.footer .fleft {
+  text-align: center;
+  float: left;
+  width: 363px;
+  height: 204px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+  border-right: 1px solid #e9e9e9;
+}
+.footer .fleft h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+.footer .fleft a {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  font-size: 14px;
+  background-color: #fff;
+  padding-top: 25px;
+  border: 1px solid #E8E8E8;
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+  box-sizing: border-box;
+}
+.footer .fleft a:hover {
+  color: #b4a078;
+}
+.footer .fleft a i {
+  display: inline-block;
+  height: 26px;
+  width: 31px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -254px;
+}
+.footer .fleft a .sec {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -60px;
+}
+.footer .fleft a p {
+  margin-top: 10px;
+}
+.footer .fleft .seca {
+  margin-left: 29px;
+}
+.footer .fcenter {
+  float: left;
+  text-align: center;
+  float: left;
+  width: 362px;
+  height: 204px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+  border-right: 1px solid #e9e9e9;
+}
+.footer .fcenter h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+.footer .fcenter p {
+  display: block;
+  line-height: 23px;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 37px;
+  margin-bottom: 22px;
+}
+.footer .fcenter .guanzhu {
+  height: 42px;
+  padding: 0 37px;
+  text-align: left;
+}
+.footer .fcenter .guanzhu span {
+  font-size: 14px;
+}
+.footer .fcenter .guanzhu i {
+  margin: auto 0;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 42px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footer .fcenter .guanzhu .yanxuan {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -470px;
+}
+.footer .fcenter .guanzhu .weixin {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -428px;
+}
+.footer .fcenter .guanzhu .weibo {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -326px;
+}
+.footer .fright {
+  float: left;
+  text-align: center;
+  float: left;
+  width: 362px;
+  height: 204px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+}
+.footer .fright h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+.footer .fright span {
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto;
+  background-color: #f0f;
+}
+.footer .fright p {
+  color: #b4a078;
+  margin-top: 3px;
+}
+.footer .footerbot {
+  width: 100%;
+  height: 268px;
+  padding-top: 37px;
+  box-sizing: border-box;
+  background-color: #414141;
+}
+.footer .footerbot .wrap {
+  height: 225px;
+}
+.footer .footerbot .bottop {
+  margin-bottom: 30px !important;
+  padding-left: 17px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.footer .footerbot .bottop i {
+  height: 50px;
+  width: 50px;
+  margin-right: 17px;
+  float: left;
+}
+.footer .footerbot .bottop .box {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.footer .footerbot .bottop .fir {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -134px;
+}
+.footer .footerbot .bottop .sec2 {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -368px;
+}
+.footer .footerbot .bottop .thr {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp);
+}
+.footer .footerbot .bottop .four {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -194px;
+}
+.footer .footerbot .bottop span {
+  float: left;
+  font-size: 18px;
+  line-height: 51px;
+  color: #fff;
+}
+.footer .footerbot .botbot {
+  border-top: 1px solid #666;
+}
+.footer .footerbot .firline {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer .footerbot .firline a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer .footerbot .firline a:hover {
+  color: #fff;
+}
+.footer .footerbot .secline,
+.footer .footerbot .thrline,
+.footer .footerbot .fourline {
+  text-align: center;
+  margin: 11px 0;
+}
+.footer .footerbot .secline a,
+.footer .footerbot .thrline a,
+.footer .footerbot .fourline a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer .footerbot .secline a:hover,
+.footer .footerbot .thrline a:hover,
+.footer .footerbot .fourline a:hover {
+  color: #fff;
+}
+.footer .footerbot .secline span,
+.footer .footerbot .thrline span,
+.footer .footerbot .fourline span {
+  color: #999;
+  font-size: 12px;
+}
+.footer .footerbot .thrline,
+.footer .footerbot .fourline {
+  padding-bottom: 11px;
+  margin: 0 0;
+}
+.footer .footerbot .fourline img {
+  display: inline-block;
+  width: 23px;
+  height: 25px;
+  margin-top: -5px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index1.css.map */

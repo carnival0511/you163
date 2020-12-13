@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             //渲染+懒加载
             const $list = $('.list ul');
             $.ajax({
-                url: 'http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/projectname/php/listdata.php',
+                url: 'http://localhost/dashboard/you163/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';

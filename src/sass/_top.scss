@@ -23,6 +23,13 @@ $font16: 16px;
     .nav {
         @extend %public;
         height: 36px;
+        .laba {
+            height: 15px;
+            width: 15px;
+            float: left;
+            margin-top: 10px;
+            background: url(http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) no-repeat;
+        }
     }
     // 左边的提示
     .notice {
@@ -38,6 +45,13 @@ $font16: 16px;
     //最后一个a
     .phone {
         border-right: none;
+        i {
+            display: inline-block;
+            margin-right: 4px;
+            height: 11px;
+            width: 7px;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp);
+        }
     }
 }
 
@@ -66,6 +80,14 @@ $font16: 16px;
 
 // 企业采购li和客户服务li的css设置
 .company {
+    i {
+        display: inline-block;
+        transform: rotate(180deg);
+        margin-left: 10px;
+        height: 5px;
+        width: 11px;
+        background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -690px;
+    }
     ul {
         display: none;
         position: absolute;
@@ -189,9 +211,27 @@ $font16: 16px;
         color: #333;
         font-size: $font12;
         margin-top: 25px;
+        i {
+            height: 18px;
+            width: 18px;
+            float: left;
+            margin-left: 22px;
+        }
+        .firi {
+            margin-right: 10px;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -148px;
+        }
+        .seci {
+            border-radius: 50%;
+            color: #fff;
+            margin-left: 4px;
+            line-height: 18px;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -51px;
+        }
         span {
-            line-height: 38px;
-            height: 38px;
+            line-height: 18px;
+            font-size: $font14;
+            float: left;
             color: #CC9756;
         }
         &:hover {
@@ -200,6 +240,7 @@ $font16: 16px;
     }
     // 第二部分尾部
     .tabBot {
+        position: relative;
         ul {
             width: 100%;
         }
@@ -207,6 +248,10 @@ $font16: 16px;
             float: left;
             padding: 0 26px;
             box-sizing: border-box;
+            position: relative;
+            &:hover .menu {
+                display: block;
+            }
         }
         a {
             padding-bottom: 7px;
@@ -220,6 +265,21 @@ $font16: 16px;
             &:hover {
                 color: #CC9756;
                 border-bottom: 3px solid #CC9756;
+            }
+        }
+        // 二级菜单
+        .menu {
+            width: 1202px;
+            position: absolute;
+            height: 450px;
+            background-color: #f00;
+            top: 38px;
+            left: 50%;
+            margin-left: -180px;
+            z-index: 9999;
+            display: none;
+            li {
+                float: none;
             }
         }
         // 首页的li没有左padding

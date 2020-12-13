@@ -1,0 +1,237 @@
+@import "public";
+.footer {
+    width: $Width;
+    border-top: 1px solid #999;
+    .wrap {
+        @extend %public;
+    }
+    .footertop {
+        height: 204px;
+        padding: 60px 0 34px 0;
+    }
+    .fleft {
+        text-align: center;
+        float: left;
+        width: 363px;
+        height: 204px;
+        font-size: $font12;
+        color: #333;
+        box-sizing: border-box;
+        border-right: 1px solid #e9e9e9;
+        h4 {
+            font-size: $font16;
+            font-weight: 400;
+            margin-bottom: 28px;
+        }
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 100px;
+            font-size: $font14;
+            background-color: #fff;
+            padding-top: 25px;
+            border: 1px solid #E8E8E8;
+            text-decoration: none;
+            cursor: pointer;
+            color: #333;
+            box-sizing: border-box;
+            // padding-bottom: 40px!important;
+            &:hover {
+                color: #b4a078;
+            }
+            i {
+                display: inline-block;
+                height: 26px;
+                width: 31px;
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -254px;
+            }
+            .sec {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -60px;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+        .seca {
+            margin-left: 29px;
+        }
+    }
+    .fcenter {
+        float: left;
+        text-align: center;
+        float: left;
+        width: 362px;
+        height: 204px;
+        font-size: $font12;
+        color: #333;
+        box-sizing: border-box;
+        border-right: 1px solid #e9e9e9;
+        h4 {
+            font-size: $font16;
+            font-weight: 400;
+            margin-bottom: 28px;
+        }
+        p {
+            display: block;
+            line-height: 23px;
+            font-size: 13px;
+            text-align: left;
+            padding: 0 37px;
+            margin-bottom: 22px;
+        }
+        .guanzhu {
+            height: 42px;
+            padding: 0 37px;
+            text-align: left;
+            // line-height: 42px;
+            span {
+                font-size: $font14;
+            }
+            i {
+                margin: auto 0;
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                line-height: 42px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .yanxuan {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -470px;
+            }
+            .weixin {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -428px;
+            }
+            .weibo {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -326px;
+            }
+        }
+    }
+    .fright {
+        float: left;
+        text-align: center;
+        float: left;
+        width: 362px;
+        height: 204px;
+        font-size: $font12;
+        color: #333;
+        box-sizing: border-box;
+        h4 {
+            font-size: $font16;
+            font-weight: 400;
+            margin-bottom: 28px;
+        }
+        span {
+            display: block;
+            width: 104px;
+            height: 104px;
+            margin: 0 auto;
+            background-color: #f0f;
+        }
+        p {
+            color: #b4a078;
+            margin-top: 3px;
+        }
+    }
+    // 底部的尾部
+    .footerbot {
+        width: $Width;
+        height: 268px;
+        padding-top: 37px;
+        box-sizing: border-box;
+        background-color: #414141;
+        .wrap {
+            @extend %public;
+            // background-color: #fff;
+            height: 225px;
+        }
+        .bottop {
+            margin-bottom: 30px!important;
+            padding-left: 17px;
+            height: 50px;
+            box-sizing: border-box;
+            // border-bottom: 1px solid #999;
+            i {
+                height: 50px;
+                width: 50px;
+                margin-right: 17px;
+                float: left;
+            }
+            .box {
+                float: left;
+                width: 25%;
+                text-align: center;
+            }
+            .fir {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -134px;
+            }
+            .sec2 {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -368px;
+            }
+            .thr {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp);
+            }
+            .four {
+                background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp) 0 -194px;
+            }
+            span {
+                float: left;
+                font-size: 18px;
+                line-height: 51px;
+                color: #fff;
+            }
+        }
+        .botbot {
+            border-top: 1px solid #666;
+        }
+        // 第一行
+        .firline {
+            margin-top: 20px;
+            text-align: center;
+            a {
+                color: #999;
+                font-size: $font12;
+                text-decoration: none;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        // 第二行
+        .secline,
+        .thrline,
+        .fourline {
+            text-align: center;
+            margin: 11px 0;
+            a {
+                color: #999;
+                font-size: $font12;
+                text-decoration: none;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            span {
+                color: #999;
+                font-size: $font12;
+            }
+        }
+        // 第三行
+        .thrline,
+        .fourline {
+            padding-bottom: 11px;
+            margin: 0 0;
+        }
+        // 第四行
+        .fourline {
+            img {
+                display: inline-block;
+                width: 23px;
+                height: 25px;
+                margin-top: -5px;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+        }
+    }
+}
