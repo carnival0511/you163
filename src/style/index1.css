@@ -506,7 +506,7 @@ table {
   width: 1202px;
   position: absolute;
   height: 450px;
-  background-color: #f00;
+  background-color: #fff;
   top: 38px;
   left: 50%;
   margin-left: -180px;
@@ -1181,7 +1181,7 @@ table {
   width: 1202px;
   position: absolute;
   height: 450px;
-  background-color: #f00;
+  background-color: #fff;
   top: 38px;
   left: 50%;
   margin-left: -180px;
@@ -1210,11 +1210,12 @@ table {
 .main .section1 .leftnav {
   position: absolute;
   top: 0;
-  left: -125px;
+  left: -136px;
 }
 .main .section1 .leftnav ul {
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff;
 }
 .main .section1 .leftnav li {
   width: 108px;
@@ -1434,6 +1435,7 @@ table {
 .main .section5 {
   width: 100%;
   height: 790px;
+  margin-bottom: 160px;
 }
 .main .section5 .wrap .sectionTop {
   padding-bottom: 20px;
@@ -1894,6 +1896,72 @@ table {
   margin-top: -5px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+/* 轮播部分样式 */
+.banner1 {
+  height: 310px;
+  position: relative;
+}
+.banner1 ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+.banner1 ul .firstpic {
+  display: block;
+}
+.banner1 ol {
+  position: absolute;
+  left: 50%;
+  margin-left: -112px;
+  bottom: 20px;
+}
+.banner1 ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-right: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.banner1 ol li.active {
+  background-color: chartreuse;
+}
+.banner1 .leftbtn1,
+.banner1 .rightbtn1 {
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #E2C199;
+  z-index: 9;
+  position: absolute;
+  top: 120px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+.banner1 .leftbtn1 {
+  left: -58px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2562px;
+}
+.banner1 .leftbtn1:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2622px;
+}
+.banner1 .rightbtn1 {
+  right: -58px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4682px;
+}
+.banner1 .rightbtn1:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4742px;
+}
+.banner1 a.leftbtn1:hover,
+.banner1 a.rightbtn1:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=index1.css.map */

@@ -1,0 +1,66 @@
+@import "top";
+@import "footer";
+
+/* 中间登录页面 */
+
+.login {
+    width: $Width;
+    height: 600px;
+    position: relative;
+    margin-top: 145px;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -960px;
+    }
+    /* 版心控制 */
+    .wrap {
+        @extend %public;
+        fieldset {
+            padding: 58px 40px 83px;
+            position: absolute;
+            top: 100px;
+            left: 45%;
+            margin-left: 0;
+            background-color: #fff;
+            legend {
+                text-align: center;
+                padding-top: 30px;
+            }
+            p {
+                margin: 20px 100px;
+            }
+            .zhuce {
+                text-decoration: none;
+                color: #fff;
+                background-color: #b4a078;
+                display: inline-block;
+            }
+            .denglu {
+                display: inline-block;
+            }
+            #username,
+            #password {
+                width: 220px;
+                height: 30px;
+            }
+            #login,
+            .zhuce {
+                width: 140px;
+                height: 48px;
+                cursor: pointer;
+                text-align: center;
+                color: #fff;
+                background: #b4a078;
+                font-size: 18px;
+                line-height: 48px;
+                border-radius: 2px;
+                margin-right: 10px;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}

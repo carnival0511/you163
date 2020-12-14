@@ -104,6 +104,130 @@ define(['jlazyload'], () => {
                     });
                 });
             });
+
+
+            // 轮播图效果
+            var $banner = $('.banner1'); // 最大的容器
+            var $picList = $('.banner1 ul li') // 图片
+            var $btnList = $('.banner1 ol li') // 小点
+            var $left = $('.leftbtn1'); // 左箭头
+            var $right = $('.rightbtn1'); // 右箭头
+            var $num = 0;
+            var $timer = null;
+
+            function lunbo() {
+                $picList.css({
+                    "display": "none"
+                });
+                // $(this).index():当前移入小点的索引
+                // 将移入小点的对应的图片显示出来,并且将对应的小点的样式改掉
+                $btnList.eq($num).addClass('active').siblings().removeClass('active');
+                $picList.eq($num).css({
+                    "display": "block"
+                });
+            }
+
+            // 移入对应的小点，显示对应的图片
+            $btnList.on('mouseover', function() {
+                console.log($(this).index());
+                // 在找之前将所有的图片隐藏
+                // $picList.css({
+                //     "display": "none"
+                // });
+                // // $(this).index():当前移入小点的索引
+                // // 将移入小点的对应的图片显示出来,并且将对应的小点的样式改掉
+                // $btnList.eq($(this).index()).addClass('active').siblings().removeClass('active');
+                // $picList.eq($(this).index()).css({
+                //     "display": "block"
+                // });
+
+
+                // 将当前索引给$num
+                $num = $(this).index();
+                lunbo();
+            });
+
+            // 将向右轮播封装
+            function rightfun() {
+                $num++;
+                if ($num > $btnList.length - 1) {
+                    $num = 0;
+                }
+                lunbo();
+            }
+
+            // 点击右箭头，图片向右轮播
+            $right.on('click', function() {
+                // $num++;
+                // if ($num > $btnList.length - 1) {
+                //     $num = 0;
+                // }
+                // $picList.css({
+                //     "display": "none"
+                // });
+                // $btnList.eq($num).addClass('active').siblings().removeClass('active');
+                // $picList.eq($num).css({
+                //     "display": "block"
+                // });
+                // lunbo();
+                rightfun();
+            });
+
+            // 点击左箭头，图片向左轮播
+            $left.on('click', function() {
+                $num--;
+                if ($num < 0) {
+                    $num = $btnList.length - 1;
+                }
+                // $picList.css({
+                //     "display": "none"
+                // });
+                // $btnList.eq($num).addClass('active').siblings().removeClass('active');
+                // $picList.eq($num).css({
+                //     "display": "block"
+                // });
+                lunbo();
+            });
+
+            // 定时器
+            $timer = setInterval(function() {
+                rightfun();
+            }, 1000);
+
+            // 移入最大的盒子，停止定时器
+            $banner.on('mouseover', function() {
+                clearInterval($timer);
+            })
+
+            // 移出盒子，开启定时器
+            $banner.on('mouseout', function() {
+                $timer = setInterval(function() {
+                    rightfun();
+                }, 1000);
+            })
+
+
+            // 最外面左侧的导航栏
+            const $leftnav = $('.leftnav');
+            $(window).on('scroll', () => {
+                let $scrolltop = $(window).scrollTop();
+                if ($scrolltop >= 592) {
+                    $leftnav.css({
+                        "position": "fixed",
+                        "top": "62px",
+                        "left": "50%",
+                        "margin-left": "-680px"
+                    });
+                } else {
+                    $leftnav.css({
+                        "position": "absolute",
+                        "top": 0,
+                        "left": "-136px",
+                        "margin-left": 0
+                    });
+                }
+            });
+
         }
     }
 });

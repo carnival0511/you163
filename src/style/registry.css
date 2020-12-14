@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 
-.top .nav, .tab, .footer .wrap, .footer .footerbot .wrap, .login .wrap {
+.top .nav, .tab, .footer .wrap, .footer .footerbot .wrap, .registry .wrap {
   width: 1090px;
   margin: 0 auto;
 }
@@ -756,7 +756,7 @@ table {
 }
 
 /* 中间登录页面 */
-.login {
+.registry {
   width: 100%;
   height: 600px;
   position: relative;
@@ -764,43 +764,38 @@ table {
   overflow: hidden;
   /* 版心控制 */
 }
-.login img {
+.registry img {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -960px;
 }
-.login .wrap fieldset {
-  padding: 58px 40px 83px;
+.registry .wrap fieldset {
+  padding: 20px 40px 83px;
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 45%;
   margin-left: 0;
   background-color: #fff;
 }
-.login .wrap fieldset legend {
+.registry .wrap fieldset legend {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 70px;
+  font-size: 20px;
+  color: #b4a078;
 }
-.login .wrap fieldset p {
+.registry .wrap fieldset p {
   margin: 20px 100px;
 }
-.login .wrap fieldset .zhuce {
-  text-decoration: none;
-  color: #fff;
-  background-color: #b4a078;
-  display: inline-block;
-}
-.login .wrap fieldset .denglu {
-  display: inline-block;
-}
-.login .wrap fieldset #username,
-.login .wrap fieldset #password {
+.registry .wrap fieldset #username,
+.registry .wrap fieldset .pass,
+.registry .wrap fieldset .email {
   width: 220px;
   height: 30px;
+  border-radius: 10px;
+  outline: none;
 }
-.login .wrap fieldset #login,
-.login .wrap fieldset .zhuce {
+.registry .wrap fieldset .submit {
   width: 140px;
   height: 48px;
   cursor: pointer;
@@ -810,9 +805,9 @@ table {
   font-size: 18px;
   line-height: 48px;
   border-radius: 2px;
-  margin-right: 10px;
+  margin-left: 100px;
   outline: none;
   border: none;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=registry.css.map */

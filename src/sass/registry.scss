@@ -1,0 +1,62 @@
+@import "top";
+@import "footer";
+
+/* 中间登录页面 */
+
+.registry {
+    width: $Width;
+    height: 600px;
+    position: relative;
+    margin-top: 145px;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -960px;
+    }
+    /* 版心控制 */
+    .wrap {
+        @extend %public;
+        fieldset {
+            padding: 20px 40px 83px;
+            position: absolute;
+            top: 50px;
+            left: 45%;
+            margin-left: 0;
+            background-color: #fff;
+            legend {
+                text-align: center;
+                padding-top: 70px;
+                font-size: 20px;
+                color: #b4a078;
+            }
+            p {
+                margin: 20px 100px;
+            }
+            #username,
+            .pass,
+            .email {
+                width: 220px;
+                height: 30px;
+                border-radius: 10px;
+                // border: none;
+                outline: none;
+            }
+            .submit {
+                width: 140px;
+                height: 48px;
+                cursor: pointer;
+                text-align: center;
+                color: #fff;
+                background: #b4a078;
+                font-size: 18px;
+                line-height: 48px;
+                border-radius: 2px;
+                margin-left: 100px;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}

@@ -3,3 +3,73 @@
 @import "banner";
 @import "main";
 @import "footer";
+
+/* 轮播部分样式 */
+
+.banner1 {
+    height: 310px;
+    position: relative;
+    ul {
+        li {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: none;
+        }
+        .firstpic {
+            display: block;
+        }
+    }
+    ol {
+        position: absolute;
+        left: 50%;
+        margin-left: -112px;
+        bottom: 20px;
+        li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            margin-right: 5px;
+            // text-indent: -999em;
+            text-align: center;
+            cursor: pointer;
+            &.active {
+                background-color: chartreuse;
+            }
+        }
+    }
+    .leftbtn1,
+    .rightbtn1 {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #E2C199;
+        z-index: 9;
+        position: absolute;
+        top: 120px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+    }
+    .leftbtn1 {
+        left: -58px;
+        background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2562px;
+        &:hover {
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -2622px;
+        }
+    }
+    .rightbtn1 {
+        right: -58px;
+        background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4682px;
+        &:hover {
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-sb5be29e752-290b858f9b.png?imageView&type=webp) 0px -4742px;
+        }
+    }
+    a.leftbtn1:hover,
+    a.rightbtn1:hover {
+        color: black;
+    }
+}

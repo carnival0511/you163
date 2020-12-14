@@ -11,10 +11,11 @@
         .leftnav {
             position: absolute;
             top: 0;
-            left: -125px;
+            left: -136px;
             ul {
                 border: 1px solid #ccc;
                 border-radius: 4px;
+                background-color: #fff;
             }
             li {
                 width: 108px;
@@ -255,7 +256,7 @@
     .section5 {
         width: $Width;
         height: 790px;
-        // padding-bottom: 60px;
+        margin-bottom: 160px;
         .wrap {
             @extend %public;
             .sectionTop {
@@ -277,7 +278,7 @@
             margin-bottom: 15px;
         }
     }
-    // 大家都在说(轮播效果)
+    // 大家都在说
     .oursay {
         box-sizing: border-box;
         width: $Width;
