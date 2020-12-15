@@ -1,0 +1,221 @@
+@import "public";
+.goodsinfo {
+    margin: 100px 0 0 200px;
+    position: relative;
+    .box {
+        line-height: 18px;
+        text-align: center;
+        position: absolute;
+        right: 50px;
+        top: -50px;
+        cursor: pointer;
+        width: 134px;
+        height: 38px;
+        border: 1px solid #CC9756;
+        border-radius: 19px;
+        padding: 8px 0;
+        box-sizing: border-box;
+        i {
+            margin-left: 12px;
+            height: 18px;
+            width: 18px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 12px;
+            cursor: pointer;
+            background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -148px;
+        }
+        &:hover {
+            background-color: #F5F3EF;
+            ;
+        }
+        a {
+            text-decoration: none;
+            color: #CC9756;
+        }
+    }
+    .wrap {
+        float: left;
+        position: relative;
+        #spic {
+            width: 428px;
+            height: 428px;
+            border: 1px solid #000;
+            float: left;
+            position: relative;
+            img {
+                width: 428px;
+                height: 428px;
+            }
+            #sf {
+                width: 267px;
+                height: 267px;
+                background: orange;
+                opacity: 0.3;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: 101;
+                visibility: hidden;
+            }
+        }
+        #bf {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            overflow: hidden;
+            position: absolute;
+            left: 430px;
+            visibility: hidden;
+            z-index: 100;
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                overflow: hidden;
+                width: 800px;
+                height: 800px;
+            }
+        }
+        #ulist {
+            position: absolute;
+            left: 0px;
+            top: 430px;
+            width: 428px;
+            height: 56px;
+            // overflow: hidden;
+            #list {
+                float: left;
+                margin-top: 20px;
+                // margin-left: 18px;
+                width: 372px;
+                position: relative;
+                ul {
+                    width: 428px;
+                    list-style: none;
+                    float: left;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    li {
+                        float: left;
+                        width: 76px;
+                        height: 76px;
+                        margin-right: 12px;
+                        &:nth-last-child(1) {
+                            margin-right: 0;
+                        }
+                    }
+                    img {
+                        width: 76px;
+                        height: 76px;
+                        border: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+    // 商品详情
+    .goodsinfo-word {
+        overflow: hidden;
+        float: left;
+        // 标题
+        .p-name {
+            width: 500px;
+            height: 50px;
+            margin-left: 50px;
+            margin-top: 20px;
+            // background-color: #f00;
+            .loadtitle {
+                font: 20px "微软雅黑";
+                color: #333;
+                text-decoration: none;
+                font-weight: 700;
+                line-height: 20px;
+                float: left;
+            }
+            .great {
+                float: right;
+                color: #333;
+                text-decoration: none;
+                span {
+                    font-size: 20px;
+                    margin-left: 5px;
+                    color: #E36844;
+                }
+            }
+        }
+        // 价格
+        .p-price {
+            margin-left: 50px;
+            margin-top: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: #f5f3ef;
+            line-height: 50px;
+            span {
+                width: 55px;
+                font-size: 13px;
+                float: left;
+                color: #666;
+                margin-left: 10px;
+            }
+            em {
+                font-size: 16px;
+            }
+            strong {
+                font-size: 28px;
+                line-height: 30px;
+                margin-left: 2px;
+                color: #d7282d;
+                font-weight: 700;
+            }
+        }
+        // 输入框和加入购物车按钮
+        .p-btn {
+            margin-top: 20px;
+            p {
+                float: left;
+                margin-left: 50px;
+                line-height: 50px;
+            }
+            input {
+                // display: inline-block;
+                width: 50px;
+                height: 46px;
+                font-size: 20px;
+                font-family: "微软雅黑";
+                color: black;
+                margin-left: 10px;
+                border: 1px solid gray;
+                float: left;
+            }
+            .addcart {
+                float: left;
+                display: block;
+                margin-right: 10px;
+                width: 168px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                color: #fff;
+                border: 1px solid #b4a078;
+                background-color: #b4a078;
+                border-radius: 2px;
+                text-align: center;
+                cursor: pointer;
+                margin-left: 20px;
+                text-decoration: none;
+                i {
+                    height: 21px;
+                    width: 21px;
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 12px;
+                    margin: 12px 8px 0 0;
+                    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/cart-sb9c1d935ed-136a897db8.png) 0 -68px;
+                }
+            }
+        }
+    }
+}

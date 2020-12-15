@@ -6,7 +6,7 @@
     $login.on('click', function() {
         $.ajax({
             type: 'post',
-            url: 'http://localhost/dashboard/you163/php/login.php',
+            url: 'http://10.31.161.129/dashboard/you163/php/login.php',
             data: {
                 user: $username.val(),
                 pass: $password.val()

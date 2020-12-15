@@ -11,35 +11,50 @@
 
 <body>
     <div class="goodsinfo">
-        <div class="box">
-            <a href="cart.html" target="_blank">进入购物车</a>
-        </div>
+        <a href="cart.html">
+            <div class="box">
+                <i></i>
+                <a href="cart.html" target="_blank">购物车</a>
+            </div>
+        </a>
+
         <div class="wrap">
+            <!-- 小图 -->
             <div id="spic">
                 <img src="" alt="" id="smallpic">
+                <!-- 小的放大镜 -->
                 <div id="sf"></div>
             </div>
+            <!-- 大的放大镜 -->
             <div id="bf">
                 <img src="" alt="" id="bpic">
             </div>
+            <!-- 放大镜下面的列表 -->
             <div id="ulist">
-                <a href="javascript:;" id="left">&lt;</a>
+                <!-- 向左箭头 -->
+                <!-- <a href="javascript:;" id="left">&lt;</a> -->
                 <div id="list">
                     <ul>
                         <!-- 渲染放大镜下面的小图 -->
                     </ul>
                 </div>
-                <a href="javascript:;" id="right">&gt;</a>
+                <!-- 向右箭头 -->
+                <!-- <a href="javascript:;" id="right">&gt;</a> -->
             </div>
         </div>
+        <!-- 商品详情 -->
         <div class="goodsinfo-word">
+            <!-- 标题 -->
             <div class="p-name">
                 <a class="loadtitle" href="##"></a>
+                <a href="#" class="great">好评率:<span>99.6%</span></a>
             </div>
-            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <!-- 价格 -->
+            <div class="p-price"><span>价格</span><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <!-- 输入框和加入购物车按钮 -->
             <div class="p-btn">
-                <input type="text" id="count" value="1" />
-                <a href="javascript:;">加入购物车</a>
+                <p><label for="count">数量:</label></p><input type="text" id="count" value="1" />
+                <a href="javascript:;" class="addcart"><i></i>加入购物车</a>
                 <!-- void(0) -->
             </div>
         </div>

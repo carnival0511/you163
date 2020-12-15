@@ -21,13 +21,15 @@
         fieldset {
             padding: 58px 40px 83px;
             position: absolute;
-            top: 100px;
+            top: 50px;
             left: 45%;
             margin-left: 0;
             background-color: #fff;
             legend {
                 text-align: center;
-                padding-top: 30px;
+                padding-top: 50px;
+                color: #b4a078;
+                font-size: 20px;
             }
             p {
                 margin: 20px 100px;
@@ -45,6 +47,8 @@
             #password {
                 width: 220px;
                 height: 30px;
+                border-radius: 15px;
+                outline: none;
             }
             #login,
             .zhuce {
@@ -56,7 +60,7 @@
                 background: #b4a078;
                 font-size: 18px;
                 line-height: 48px;
-                border-radius: 2px;
+                border-radius: 20px;
                 margin-right: 10px;
                 outline: none;
                 border: none;

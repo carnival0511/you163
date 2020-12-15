@@ -60,7 +60,7 @@ define(['jlazyload'], () => {
             //渲染+懒加载
             const $list = $('.sectionBot');
             $.ajax({
-                url: 'http://localhost/dashboard/you163/php/index.php',
+                url: 'http://10.31.161.129/dashboard/you163/php/index.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';

@@ -1211,11 +1211,12 @@ table {
   position: absolute;
   top: 0;
   left: -136px;
+  background-color: #fff;
+  z-index: 10;
 }
 .main .section1 .leftnav ul {
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #fff;
 }
 .main .section1 .leftnav li {
   width: 108px;

@@ -8,14 +8,14 @@ define(['jcookie'], () => {
             }
             //2.将sid传给后端，后端根据对应的sid返回不同的数据。
             $.ajax({
-                url: 'http://localhost/dashboard/you163/php/detail.php',
+                url: 'http://10.31.161.129/dashboard/you163/php/detail.php',
                 data: {
                     sid: $sid
                 },
                 dataType: 'json'
             }).done(function(data) {
                 console.log(data);
-                console.log(data.urls);
+                // console.log(data.urls);
                 //获取数据，将数据放入对应的结构中。
                 $('#smallpic').attr('src', data.url);
                 $('.loadtitle').html(data.title);
@@ -24,14 +24,14 @@ define(['jcookie'], () => {
                 //渲染放大镜下面的小图
                 let $picurl = data.urls.split(','); //将数据转换成数组。
                 let $strhtml = '';
-                const $list = $('#list');
+                const $list = $('#list ul');
                 console.log($picurl);
                 $.each($picurl, function(index, value) {
                     $strhtml += `
-                <li>
-                    <img src="${value}"/>
-                </li>
-            `;
+                        <li>
+                            <img src="${value}"/>
+                        </li>
+                    `;
                 });
                 $list.html($strhtml);
             });
@@ -70,6 +70,80 @@ define(['jcookie'], () => {
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
                 alert('按钮被点击了');
+            });
+
+            // 放大镜效果
+            let $ul = $('#list ul'); // 小图片的父元素ul
+            const $bpic = $('#bpic'); // 大图片
+            const $spic = $('#spic'); // 小图的框
+            const $smallpic = $('#smallpic') // 小图
+            const $bf = $('#bf'); // 大的放大镜
+            const $sf = $('#sf'); // 小的放大镜
+            // 首先获取小图的src属性
+            // let $attr = $smallpic.attr('src');
+
+            // $bpic.attr('src', $ul.find('li').find('img').eq(0).attr('src'));
+            // console.log($spic.find('img').attr('src'));
+            // $bpic.attr('src', $attr);
+            // 使用事件委托抓取移入的li的索引
+            $ul.on('mouseover', 'li', function() {
+                let $index = $(this).index(); // 存取这个li的索引
+                let $src = $ul.find('li').find('img').eq($index).attr('src'); // 找到索引对应的图片的src进行存取
+                $smallpic.attr('src', $src);
+            });
+            // 1. 移入spic， 将右边的放大镜显现出来
+            $spic.on('mouseover', function() {
+                $bpic.attr('src', $spic.find('img').attr('src'));
+                // 2.获取鼠标在图片中的位置(鼠标的坐标减去spic的offset().top)
+                $(this).on('mousemove', function(event) {
+                    // 小的放大镜显现
+                    $sf.css({
+                        'visibility': 'visible'
+                    });
+                    // 大的放大镜显现
+                    $bf.css({
+                        'visibility': 'visible'
+                    });
+                    // 小放尺寸
+                    // $sf.width() = $bf.width() * $smallpic.width() / $bpic.width();
+                    // $sf.height() = $bf.height() * $smallpic.height() / $bpic.height();
+                    // console.log($sf.width() + '小放尺寸' + $sf.width());
+                    // 缩放比例
+                    let $ratio = $bf.width() / $sf.width();
+                    // console.log($ratio);
+                    let $top = event.pageY - $(this).offset().top - $sf.height() / 2;
+                    let $left = event.pageX - $(this).offset().left - $sf.width() / 2;
+                    // console.log($top);
+                    if ($left <= 0) {
+                        $left = 0;
+                    } else if ($left >= $smallpic.width() - $sf.width()) {
+                        $left = $smallpic.width() - $sf.width();
+                    }
+                    if ($top <= 0) {
+                        $top = 0;
+                    } else if ($top >= $smallpic.height() - $sf.height()) {
+                        $top = $smallpic.height() - $sf.height();
+                    }
+                    // console.log($top);
+                    $sf.css({
+                        'top': $top,
+                        'left': $left
+                    });
+                    $bpic.css({
+                        'top': (-$top * 1.87),
+                        'left': (-$left * 1.87)
+                    });
+                    console.log($bpic.offset().top);
+                });
+                $(this).on('mouseout', function() {
+                    $sf.css({
+                        'visibility': 'hidden'
+                    });
+                    // 大的放大镜显现
+                    $bf.css({
+                        'visibility': 'hidden'
+                    });
+                })
             });
         }
     }

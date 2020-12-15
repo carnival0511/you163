@@ -12,10 +12,11 @@
             position: absolute;
             top: 0;
             left: -136px;
+            background-color: #fff;
+            z-index: 10;
             ul {
                 border: 1px solid #ccc;
                 border-radius: 4px;
-                background-color: #fff;
             }
             li {
                 width: 108px;
