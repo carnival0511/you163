@@ -37,6 +37,8 @@ define(['pagination', 'jlazyload'], function() {
                 //懒加载
                 $("img.lazy").lazyload({ effect: "fadeIn" });
 
+                $array_default = [];
+                $array = [];
                 //将li元素添加到排序前的数组中。
                 $('.list li').each(function(index, element) { //element:原生的元素对象
                     $array_default[index] = $(this); //排序前
@@ -77,6 +79,8 @@ define(['pagination', 'jlazyload'], function() {
                             //懒加载
                             $("img.lazy").lazyload({ effect: "fadeIn" });
 
+                            $array_default = [];
+                            $array = [];
                             //将li元素添加到排序前的数组中。
                             $('.list li').each(function(index, element) { //element:原生的元素对象
                                 $array_default[index] = $(this); //排序前
@@ -86,7 +90,6 @@ define(['pagination', 'jlazyload'], function() {
                         });
                     }
                 });
-
 
                 //3.点击按钮进行排序
                 $('button').eq(0).on('click', function() {

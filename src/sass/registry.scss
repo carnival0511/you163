@@ -32,18 +32,19 @@
                 color: #b4a078;
             }
             p {
-                margin: 20px 100px;
+                padding: 20px 100px;
+                display: inline-block;
             }
             #username,
-            .pass,
-            .email {
+            #password,
+            #email {
                 width: 220px;
                 height: 30px;
                 border-radius: 10px;
-                // border: none;
                 outline: none;
+                text-indent: 10px;
             }
-            .submit {
+            #submit {
                 width: 140px;
                 height: 48px;
                 cursor: pointer;

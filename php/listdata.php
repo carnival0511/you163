@@ -5,7 +5,7 @@ $result = $conn->query("select * from taobaogoods"); //获取数据的结果集(
 
 $num = $result->num_rows; //记录集的总条数  40
 
-$pagesize = 10; //单个页面展示的数据条数 10
+$pagesize = 15; //单个页面展示的数据条数 10
 
 $pagenum = ceil($num / $pagesize); //获取页数，一定选择向上取整。 3页
 

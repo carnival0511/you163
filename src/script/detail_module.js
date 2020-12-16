@@ -90,26 +90,23 @@ define(['jcookie'], () => {
                 let $index = $(this).index(); // 存取这个li的索引
                 let $src = $ul.find('li').find('img').eq($index).attr('src'); // 找到索引对应的图片的src进行存取
                 $smallpic.attr('src', $src);
+                $bpic.attr('src', $spic.find('img').attr('src'));
             });
             // 1. 移入spic， 将右边的放大镜显现出来
-            $spic.on('mouseover', function() {
+            $spic.hover(function() {
                 $bpic.attr('src', $spic.find('img').attr('src'));
                 // 2.获取鼠标在图片中的位置(鼠标的坐标减去spic的offset().top)
                 $(this).on('mousemove', function(event) {
                     // 小的放大镜显现
-                    $sf.css({
-                        'visibility': 'visible'
-                    });
+                    $sf.css('visibility', 'visible');
                     // 大的放大镜显现
-                    $bf.css({
-                        'visibility': 'visible'
-                    });
+                    $bf.css('visibility', 'visible');
                     // 小放尺寸
                     // $sf.width() = $bf.width() * $smallpic.width() / $bpic.width();
                     // $sf.height() = $bf.height() * $smallpic.height() / $bpic.height();
                     // console.log($sf.width() + '小放尺寸' + $sf.width());
                     // 缩放比例
-                    let $ratio = $bf.width() / $sf.width();
+                    let $ratio = ($bpic.width() - $bf.width()) / ($smallpic.width() - $sf.width());
                     // console.log($ratio);
                     let $top = event.pageY - $(this).offset().top - $sf.height() / 2;
                     let $left = event.pageX - $(this).offset().left - $sf.width() / 2;
@@ -130,20 +127,16 @@ define(['jcookie'], () => {
                         'left': $left
                     });
                     $bpic.css({
-                        'top': (-$top * 1.87),
-                        'left': (-$left * 1.87)
+                        'top': (-$top * $ratio),
+                        'left': (-$left * $ratio)
                     });
                     console.log($bpic.offset().top);
                 });
-                $(this).on('mouseout', function() {
-                    $sf.css({
-                        'visibility': 'hidden'
-                    });
-                    // 大的放大镜显现
-                    $bf.css({
-                        'visibility': 'hidden'
-                    });
-                })
+            }, function() {
+                // 小的放大镜隐藏
+                $sf.css('visibility', 'hidden');
+                // 大的放大镜隐藏
+                $bf.css('visibility', 'hidden');
             });
         }
     }

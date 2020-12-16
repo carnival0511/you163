@@ -785,17 +785,19 @@ table {
   color: #b4a078;
 }
 .registry .wrap fieldset p {
-  margin: 20px 100px;
+  padding: 20px 100px;
+  display: inline-block;
 }
 .registry .wrap fieldset #username,
-.registry .wrap fieldset .pass,
-.registry .wrap fieldset .email {
+.registry .wrap fieldset #password,
+.registry .wrap fieldset #email {
   width: 220px;
   height: 30px;
   border-radius: 10px;
   outline: none;
+  text-indent: 10px;
 }
-.registry .wrap fieldset .submit {
+.registry .wrap fieldset #submit {
   width: 140px;
   height: 48px;
   cursor: pointer;
