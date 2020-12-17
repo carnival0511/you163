@@ -57,7 +57,85 @@
                 cursor: default;
             }
         }
-        // background-color: #f00;
+        .rightnav {
+            position: absolute;
+            top: 0;
+            right: -150px;
+            background-color: #fff;
+            z-index: 1000;
+            .ercode {
+                height: 140px;
+                canvas {
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 5px;
+                    // background-color: #f00;
+                    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -298px;
+                }
+                p {
+                    line-height: 14px;
+                    color: #BC3B3B;
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .scancode {
+                    color: #666;
+                }
+            }
+            p {
+                line-height: 20px;
+                font-size: 14px;
+                margin: 8px auto 0;
+                text-align: center;
+                &:hover {
+                    color: #b4a078;
+                }
+            }
+            .ele {
+                height: 78px;
+                width: 72px;
+                color: #666;
+                i {
+                    display: block;
+                    height: 26px;
+                    width: 26px;
+                    margin: 0 auto;
+                    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -527px;
+                }
+            }
+            .online {
+                height: 82px;
+                width: 72px;
+                i {
+                    display: block;
+                    height: 31px;
+                    width: 32px;
+                    margin: 0 auto;
+                    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -128px;
+                    &:hover {
+                        background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -46px;
+                    }
+                }
+            }
+            .totop {
+                width: 72px;
+                height: 60px;
+                i {
+                    display: block;
+                    height: 15px;
+                    width: 24px;
+                    margin: 0 auto;
+                    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -299px;
+                    &:hover {
+                        background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -249px;
+                    }
+                }
+                p a {
+                    text-decoration: none;
+                }
+            }
+        }
     }
     // 第一部分上
     .sectionTop {

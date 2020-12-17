@@ -21,8 +21,10 @@
             <a href="#" class="notice">关于防止近期不法分子冒充客服实施诈骗的公告</a>
             <ul class="rightul">
                 <!-- 登录/注册 -->
-                <li><a href="registry.html">注册</a></li>
-                <li><a href="login.html">登录</a></li>
+                <li><a href="registry.html" class="login">注册</a></li>
+                <li><a href="login.html" class="login">登录</a></li>
+                <li style="display: none;" class="admin"><span></span>：欢迎光临</li>
+                <li style="display: none;" class="admin"><a href="javascript:;">退出</a></li>
                 <li><a href="#">我的订单</a></li>
                 <li><a href="#">会员</a></li>
                 <li><a href="#">甄选家</a></li>
@@ -59,6 +61,7 @@
                 <!-- 中间部分 -->
                 <div class="tabMiddle">
                     <div class="search">
+                        <i></i>
                         <input type="text" placeholder="9.9元超值专区">
                         <span class="select"><span>搜索</span>
                     </div>
@@ -70,8 +73,7 @@
                 <!-- 右边购物车 -->
                 <div class="tabRight">
                     <i class="firi"></i>
-                    <span>购物车</span>
-                    <i class="seci">0</i>
+                    <a href="cart.html"><span>购物车</span></a>
                 </div>
             </div>
             <!-- 第二部分尾部 -->
@@ -101,6 +103,36 @@
                     <li><a href="#">为你严选</a></li>
                     <li class="zhongchou"><a href="#">众筹</a></li>
                 </ul>
+            </div>
+            <!-- 滑动时出现的头部 -->
+            <div class="scrolltop1" style="display: none;">
+                <span class="smalllogo"></span>
+                <ul>
+                    <li class="shouye"><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">居家生活</a>
+                        <div class="menu">
+                            <ul style="float: left;">
+                                <li><a href="list.html">进入商品详情页</a></li>
+                                <li><a href="#">口碑好物</a></li>
+                                <li><a href="#">床上用品</a></li>
+                                <li><a href="#">家居家装</a></li>
+                                <li><a href="#">家居饰品</a></li>
+                                <li><a href="#">厨房用具</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">服饰鞋包</a></li>
+                    <li><a href="#">美食酒水</a></li>
+                    <li><a href="#">个护清洁</a></li>
+                    <li><a href="#">母婴亲子</a></li>
+                    <li><a href="#">运动旅行</a></li>
+                    <li><a href="#">数码家电</a></li>
+                    <li><a href="#">严选全球</a></li>
+                </ul>
+                <span class="smallfang"></span>
+                <span class="smallpeo"></span>
+                <span class="smallcart"></span>
             </div>
         </div>
     </div>
@@ -134,119 +166,33 @@
                 <small>为你寻觅世间好物</small>
                 <a href="#">更多新品 ></a>
             </div>
+
+            <!-- 最外面右侧的导航 -->
+            <div class="rightnav">
+                <div class="ercode">
+                    <canvas>二维码</canvas>
+                    <p class="scancode">扫码领</p>
+                    <p>APP大额</p>
+                    <p>新人红包</p>
+                </div>
+                <div class="ele">
+                    <i></i>
+                    <p>订阅电子刊</p>
+                </div>
+                <div class="online">
+                    <i></i>
+                    <p>在线客服</p>
+                </div>
+                <div class="totop">
+                    <i></i>
+                    <p>
+                        <a href="index.html">回顶部</a>
+                    </p>
+                </div>
+            </div>
+
             <div class="sectionBot">
-                <!-- <div class="product1"> -->
-                <!-- <a href="#"> -->
-                <!-- 商品图片 -->
-                <!-- <div class="productpic">
-                            <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                            <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                            <div class="protitle">
-                                <span>年终底价</span>
-                                <span class="nowprice">¥16.9</span>
-                            </div>
-                            <div class="procontent">
-                                <span>仅剩13小时</span>
-                            </div>
-                        </div> -->
-                <!-- 商品详情 -->
-                <!-- <div class="bd">
-                            <div class="prdtag">
-                                <span>年终底价</span>
-                                <span>每满200减25券</span>
-                            </div>
-                            <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                            <p class="price">
-                                <span>¥16.9</span>
-                                <span class="counterprice">¥19.9</span>
-                            </p>
-                        </div>
-                    </a> -->
-                <!-- </div> -->
-                <!-- <div class="product1"> -->
-                <!-- <a href="#"> -->
-                <!-- 商品图片 -->
-                <!-- <div class="productpic">
-                            <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                            <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                            <div class="protitle">
-                                <span>年终底价</span>
-                                <span class="nowprice">¥16.9</span>
-                            </div>
-                            <div class="procontent">
-                                <span>仅剩13小时</span>
-                            </div>
-                        </div> -->
-                <!-- 商品详情 -->
-                <!-- <div class="bd">
-                            <div class="prdtag">
-                                <span>年终底价</span>
-                                <span>每满200减25券</span>
-                            </div>
-                            <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                            <p class="price">
-                                <span>¥16.9</span>
-                                <span class="counterprice">¥19.9</span>
-                            </p>
-                        </div>
-                    </a> -->
-                <!-- </div> -->
-                <!-- <div class="product1"> -->
-                <!-- <a href="#"> -->
-                <!-- 商品图片 -->
-                <!-- <div class="productpic">
-                            <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                            <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                            <div class="protitle">
-                                <span>年终底价</span>
-                                <span class="nowprice">¥16.9</span>
-                            </div>
-                            <div class="procontent">
-                                <span>仅剩13小时</span>
-                            </div>
-                        </div> -->
-                <!-- 商品详情 -->
-                <!-- <div class="bd">
-                            <div class="prdtag">
-                                <span>年终底价</span>
-                                <span>每满200减25券</span>
-                            </div>
-                            <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                            <p class="price">
-                                <span>¥16.9</span>
-                                <span class="counterprice">¥19.9</span>
-                            </p>
-                        </div>
-                    </a> -->
-                <!-- </div> -->
-                <!-- <div class="product1 lastpro"> -->
-                <!-- <a href="#"> -->
-                <!-- 商品图片 -->
-                <!-- <div class="productpic">
-                            <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                            <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                            <div class="protitle">
-                                <span>年终底价</span>
-                                <span class="nowprice">¥16.9</span>
-                            </div>
-                            <div class="procontent">
-                                <span>仅剩13小时</span>
-                            </div>
-                        </div> -->
-                <!-- 商品详情 -->
-                <!-- <div class="bd">
-                            <div class="prdtag">
-                                <span>年终底价</span>
-                                <span>每满200减25券</span>
-                            </div>
-                            <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                            <p class="price">
-                                <span>¥16.9</span>
-                                <span class="counterprice">¥19.9</span>
-                            </p>
-                        </div>
-                    </a> -->
-                <!-- </div> -->
+
             </div>
         </div>
 
@@ -261,118 +207,7 @@
                     <a href="#">更多新品 ></a>
                 </div>
                 <div class="sectionBot">
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1 lastpro"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
+
                 </div>
             </div>
 
@@ -431,118 +266,7 @@
                 </div>
                 <!-- 底部商品 -->
                 <div class="sectionBot">
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1 lastpro"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
+
                 </div>
             </div>
         </div>
@@ -708,118 +432,7 @@
                 </div>
                 <!-- 底部商品 -->
                 <div class="sectionBot">
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
-                    <!-- <div class="product1 lastpro"> -->
-                    <!-- <a href="#"> -->
-                    <!-- 商品图片 -->
-                    <!-- <div class="productpic">
-                                <img src="https://yanxuan-item.nosdn.127.net/250e3bce0e68a9671e198e5b3d1ebe2f.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img1">
-                                <img src="https://yanxuan-item.nosdn.127.net/9801c545a7004fcf934d7865c66ee139.png?type=webp&quality=95&thumbnail=265x265&imageView" class="img-lazyload img2">
-                                <div class="protitle">
-                                    <span>年终底价</span>
-                                    <span class="nowprice">¥16.9</span>
-                                </div>
-                                <div class="procontent">
-                                    <span>仅剩13小时</span>
-                                </div>
-                            </div> -->
-                    <!-- 商品详情 -->
-                    <!-- <div class="bd">
-                                <div class="prdtag">
-                                    <span>年终底价</span>
-                                    <span>每满200减25券</span>
-                                </div>
-                                <h4><a href="#"><span> 多肉葡萄/日照森林，能除臭的空气清新香氛</span></a></h4>
-                                <p class="price">
-                                    <span>¥16.9</span>
-                                    <span class="counterprice">¥19.9</span>
-                                </p>
-                            </div>
-                        </a> -->
-                    <!-- </div> -->
+
                 </div>
             </div>
         </div>
@@ -846,8 +459,8 @@
             <!-- 版心控制 -->
             <div class="wrap">
                 <!-- 两个按钮 -->
-                <button class="leftbtn"></button>
-                <button class="rightbtn"></button>
+                <!-- <button class="leftbtn"></button>
+                <button class="rightbtn"></button> -->
                 <div class="sectionTop">
                     <h3>大家都在说</h3>
                     <small>生活，没有统一标准</small>
@@ -906,9 +519,6 @@
         </div>
     </div>
 
-
-
-
     <!-- 底部 -->
     <div class="footer">
         <div class="wrap">
@@ -937,7 +547,7 @@
                 </div>
                 <div class="fright">
                     <h4>扫码下载严选APP</h4>
-                    <span>二维码</span>
+                    <span></span>
                     <p>下载领大额新人红包</p>
                 </div>
             </div>

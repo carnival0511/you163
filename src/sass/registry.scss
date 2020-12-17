@@ -32,8 +32,28 @@
                 color: #b4a078;
             }
             p {
-                padding: 20px 100px;
+                padding: 10px 10px;
                 display: inline-block;
+                position: relative;
+                i {
+                    width: 21px;
+                    height: 24px;
+                    display: block;
+                    position: absolute;
+                    top: 16px;
+                    left: 80px;
+                    background-color: #f00;
+                    border-right: 1px solid #e8e8e8;
+                }
+                .smalli1 {
+                    background: url(https://yanxuan.nosdn.127.net/d6bd29fcf2096cb4c5d338e0fce13919.png) 0 2px no-repeat;
+                }
+                .smalli2 {
+                    background: url(https://yanxuan.nosdn.127.net/178e29b95f152a8aa6490f4f7032a8e8.png) 0 2px no-repeat;
+                }
+                .smalli3 {
+                    background: url(https://yanxuan.nosdn.127.net/49f4a785eb9ded4831d8cb0ede642b3e.png) 0 2px no-repeat;
+                }
             }
             #username,
             #password,
@@ -42,7 +62,9 @@
                 height: 30px;
                 border-radius: 10px;
                 outline: none;
-                text-indent: 10px;
+                text-indent: 30px;
+                margin-bottom: 10px;
+                margin-right: 10px;
             }
             #submit {
                 width: 140px;

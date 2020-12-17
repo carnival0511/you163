@@ -17,7 +17,7 @@
 
     // 在输入的时候对username的格式进行判断
     $username.on('focus', function() {
-        $span.eq(1).css('color', '#333').html('中英文均可，最长16个英文或8个汉字');
+        $span.eq(1).css('color', '#333').html('中英文，最长长度为16');
     });
 
     // 当username框失去焦点时，将值和数据库中的数据进行比较
@@ -31,11 +31,13 @@
         }).done(function(data) { //data就是后端返回的结果
             // 在数据库中不存在的话,使用表单验证进一步判断
             if (!data) {
-                var $str = $username.val().length; // username输入框内容的长度
+                // var $str = $username.val().replace(/[\u4e00-\u9fa5]/g, '**').length; // username输入框内容的长度
                 var $val = $username.val(); // username输入框内容
+                var $str = $val.replace(/[\u4e00-\u9fa5]/g, '**').length; // username输入框内容的长度
+                // console.log($str);
                 if ($val !== '') { // 数据不为空
                     if ($str >= 3 && $str <= 16) {
-                        var $reg = /^[a-z0-9_-]{3,16}$/; // jquery中的username判断正则表达式
+                        var $reg = /^[a-zA-Z0-9\u4e00-\u9fa5]+$/; // jquery中的username判断正则表达式
                         if ($reg.test($val)) { // 使用test方法判断
                             // 判断正确，将第一个span内容变成√，将第二个span(也就是提示文本)置空
                             $span.eq(0).css('color', '#0f0').html('√');

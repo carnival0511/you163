@@ -227,7 +227,63 @@ define(['jlazyload'], () => {
                     });
                 }
             });
+            // 最外面右侧的导航栏
+            const $rightnav = $('.rightnav');
+            $(window).on('scroll', () => {
+                let $scrolltop = $(window).scrollTop();
+                if ($scrolltop >= 592) {
+                    $rightnav.css({
+                        "position": "fixed",
+                        "top": "62px",
+                        "right": "65px",
+                    });
+                } else {
+                    $rightnav.css({
+                        "position": "absolute",
+                        "top": 0,
+                        "right": "-150px"
+                    });
+                }
+            });
 
+
+            //检测是否用户已经登录
+            if (localStorage.getItem('loginname')) {
+                $('.admin').show();
+                $('.login').hide();
+                $('.admin span').html(localStorage.getItem('loginname'));
+            }
+
+            //退出登录 - 删除本地存储
+            $('.admin a').on('click', function() {
+                $('.admin').hide();
+                $('.login').show();
+                localStorage.removeItem('loginname');
+            });
+
+
+            // 滑动时出现的头部
+            const $scrolltop1 = $('.scrolltop1');
+            $(window).on('scroll', () => {
+                let $scrolltop = $(window).scrollTop();
+                if ($scrolltop >= 150) {
+                    $scrolltop1.css({
+                        "position": "fixed",
+                        "top": 0,
+                        "left": "50%",
+                        "margin-left": "-545px",
+                        "display": "block"
+                    });
+                } else {
+                    $scrolltop1.css({
+                        "position": "absolute",
+                        "top": "120px",
+                        "left": "-136px",
+                        "margin-left": 0,
+                        "display": "none"
+                    });
+                }
+            });
         }
     }
 });

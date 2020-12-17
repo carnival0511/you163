@@ -325,6 +325,15 @@ table {
   color: #fff;
 }
 
+.admin {
+  color: #CC9756;
+  line-height: 36px;
+  font-size: 12px;
+}
+.admin:hover {
+  color: #fff;
+}
+
 .company i {
   display: inline-block;
   transform: rotate(180deg);
@@ -340,7 +349,7 @@ table {
 }
 .company:hover ul {
   display: block;
-  background-color: #fff;
+  background-color: #ccc;
   z-index: 2;
 }
 .company:hover ul li {
@@ -350,12 +359,15 @@ table {
   border-right: none;
   line-height: 36px;
   width: 69px;
-  color: #ccc;
+  color: #000;
 }
 .company:hover ul a:hover {
   color: #b4a078;
 }
 
+.tab {
+  position: relative;
+}
 .tab .tabTop {
   overflow: auto;
   width: 100%;
@@ -431,6 +443,19 @@ table {
 .tab .tabMiddle .select:hover {
   background-color: #E2C199;
 }
+.tab .tabMiddle .search {
+  position: relative;
+}
+.tab .tabMiddle .search i {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  z-index: 100;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 211px;
+}
 .tab .tabRight {
   float: right;
   position: relative;
@@ -474,6 +499,7 @@ table {
   background-color: #F5F3EF;
 }
 .tab .tabBot {
+  height: 50px;
   position: relative;
 }
 .tab .tabBot ul {
@@ -525,6 +551,91 @@ table {
 }
 .tab .tabBot .zhongchou {
   padding-right: 0;
+}
+.tab .scrolltop1 {
+  height: 50px;
+  width: 1078px;
+  position: absolute;
+  top: 120px;
+  z-index: 10000;
+  background-color: #fff;
+}
+.tab .scrolltop1 .smalllogo {
+  height: 30px;
+  width: 256px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -832px;
+}
+.tab .scrolltop1 > ul {
+  width: 650px;
+  height: 50px;
+  float: left;
+}
+.tab .scrolltop1 > ul li {
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 50px;
+}
+.tab .scrolltop1 > ul li:hover .menu {
+  display: block;
+}
+.tab .scrolltop1 > ul a {
+  padding-bottom: 7px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+}
+.tab .scrolltop1 > ul a:hover {
+  color: #CC9756;
+  border-bottom: 3px solid #CC9756;
+}
+.tab .scrolltop1 > ul .menu {
+  width: 1202px;
+  position: absolute;
+  height: 450px;
+  background-color: #fff;
+  top: 45px;
+  left: 50%;
+  margin-left: -380px;
+  z-index: 9999;
+  display: none;
+}
+.tab .scrolltop1 > ul .menu li {
+  float: none;
+}
+.tab .scrolltop1 > ul .shouye {
+  padding-left: 0;
+}
+.tab .scrolltop1 > ul .shouye a {
+  color: #CC9756;
+  border-bottom: 3px solid #CC9756;
+}
+.tab .scrolltop1 .smallfang,
+.tab .scrolltop1 .smallpeo,
+.tab .scrolltop1 .smallcart {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.tab .scrolltop1 .smallfang {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -1204px;
+}
+.tab .scrolltop1 .smallpeo {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -1572px;
+}
+.tab .scrolltop1 .smallcart {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -408px;
 }
 
 html,
@@ -1000,6 +1111,15 @@ table {
   color: #fff;
 }
 
+.admin {
+  color: #CC9756;
+  line-height: 36px;
+  font-size: 12px;
+}
+.admin:hover {
+  color: #fff;
+}
+
 .company i {
   display: inline-block;
   transform: rotate(180deg);
@@ -1015,7 +1135,7 @@ table {
 }
 .company:hover ul {
   display: block;
-  background-color: #fff;
+  background-color: #ccc;
   z-index: 2;
 }
 .company:hover ul li {
@@ -1025,12 +1145,15 @@ table {
   border-right: none;
   line-height: 36px;
   width: 69px;
-  color: #ccc;
+  color: #000;
 }
 .company:hover ul a:hover {
   color: #b4a078;
 }
 
+.tab {
+  position: relative;
+}
 .tab .tabTop {
   overflow: auto;
   width: 100%;
@@ -1106,6 +1229,19 @@ table {
 .tab .tabMiddle .select:hover {
   background-color: #E2C199;
 }
+.tab .tabMiddle .search {
+  position: relative;
+}
+.tab .tabMiddle .search i {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  z-index: 100;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 211px;
+}
 .tab .tabRight {
   float: right;
   position: relative;
@@ -1149,6 +1285,7 @@ table {
   background-color: #F5F3EF;
 }
 .tab .tabBot {
+  height: 50px;
   position: relative;
 }
 .tab .tabBot ul {
@@ -1200,6 +1337,91 @@ table {
 }
 .tab .tabBot .zhongchou {
   padding-right: 0;
+}
+.tab .scrolltop1 {
+  height: 50px;
+  width: 1078px;
+  position: absolute;
+  top: 120px;
+  z-index: 10000;
+  background-color: #fff;
+}
+.tab .scrolltop1 .smalllogo {
+  height: 30px;
+  width: 256px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -832px;
+}
+.tab .scrolltop1 > ul {
+  width: 650px;
+  height: 50px;
+  float: left;
+}
+.tab .scrolltop1 > ul li {
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 50px;
+}
+.tab .scrolltop1 > ul li:hover .menu {
+  display: block;
+}
+.tab .scrolltop1 > ul a {
+  padding-bottom: 7px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+}
+.tab .scrolltop1 > ul a:hover {
+  color: #CC9756;
+  border-bottom: 3px solid #CC9756;
+}
+.tab .scrolltop1 > ul .menu {
+  width: 1202px;
+  position: absolute;
+  height: 450px;
+  background-color: #fff;
+  top: 45px;
+  left: 50%;
+  margin-left: -380px;
+  z-index: 9999;
+  display: none;
+}
+.tab .scrolltop1 > ul .menu li {
+  float: none;
+}
+.tab .scrolltop1 > ul .shouye {
+  padding-left: 0;
+}
+.tab .scrolltop1 > ul .shouye a {
+  color: #CC9756;
+  border-bottom: 3px solid #CC9756;
+}
+.tab .scrolltop1 .smallfang,
+.tab .scrolltop1 .smallpeo,
+.tab .scrolltop1 .smallcart {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.tab .scrolltop1 .smallfang {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -1204px;
+}
+.tab .scrolltop1 .smallpeo {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -1572px;
+}
+.tab .scrolltop1 .smallcart {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s4e5a8e15c4-6c6b72bf09.png?imageView&type=webp) 0 -408px;
 }
 
 .main .section1 {
@@ -1253,6 +1475,84 @@ table {
   border-top-left-radius: 4px;
   font-weight: 700;
   cursor: default;
+}
+.main .section1 .rightnav {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  background-color: #fff;
+  z-index: 1000;
+}
+.main .section1 .rightnav .ercode {
+  height: 140px;
+}
+.main .section1 .rightnav .ercode canvas {
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -298px;
+}
+.main .section1 .rightnav .ercode p {
+  line-height: 14px;
+  color: #BC3B3B;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+.main .section1 .rightnav .ercode .scancode {
+  color: #666;
+}
+.main .section1 .rightnav p {
+  line-height: 20px;
+  font-size: 14px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+.main .section1 .rightnav p:hover {
+  color: #b4a078;
+}
+.main .section1 .rightnav .ele {
+  height: 78px;
+  width: 72px;
+  color: #666;
+}
+.main .section1 .rightnav .ele i {
+  display: block;
+  height: 26px;
+  width: 26px;
+  margin: 0 auto;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -527px;
+}
+.main .section1 .rightnav .online {
+  height: 82px;
+  width: 72px;
+}
+.main .section1 .rightnav .online i {
+  display: block;
+  height: 31px;
+  width: 32px;
+  margin: 0 auto;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -128px;
+}
+.main .section1 .rightnav .online i:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -46px;
+}
+.main .section1 .rightnav .totop {
+  width: 72px;
+  height: 60px;
+}
+.main .section1 .rightnav .totop i {
+  display: block;
+  height: 15px;
+  width: 24px;
+  margin: 0 auto;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -299px;
+}
+.main .section1 .rightnav .totop i:hover {
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png) 0 -249px;
+}
+.main .section1 .rightnav .totop p a {
+  text-decoration: none;
 }
 .main .sectionTop {
   padding-bottom: 20px;
@@ -1792,10 +2092,11 @@ table {
 }
 .footer .fright span {
   display: block;
-  width: 104px;
-  height: 104px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
   background-color: #f0f;
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) 0 -298px;
 }
 .footer .fright p {
   color: #b4a078;
